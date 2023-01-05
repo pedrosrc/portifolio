@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@font-face {
+    font-family: "logo";
+    src: url('../imagens/fonts/13_Misa.TTF') format('truetype');
+}
+@font-face {
+    font-family: "nome";
+    src: url(../imagens/fonts/UAV-OSD-Sans-Mono.ttf) format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#0D0D0D;
+    height: 100vh;
+    width: 100%;
+    /*overflow: overlay;*/
+}
+:root{
+    --cor01: #038C33;
+    --cor02: #77F296;
+    --cor03: #0D0D0D;
+    --cor04: #141414;
+
+}
+header{
+    padding: 20px 0;
+    margin: 0;
+    border-bottom: 1px solid gray;
+    
+}
+.caixa{   
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    max-width:940px;
+    
+}
+nav{
+    top: 20px;
+    font-size: 15px;
+   /* position: fixed;*/
+    position: absolute;
+    justify-content: space-between;
+    right: 0;
+    height: 100vh;
+}
+ nav a {
+    text-transform: uppercase;
+    color:white;
+    text-decoration: none;
+    padding-inline-start: 10px;
+    font-family: 'Red Hat Display',Arial, Helvetica, sans-serif;
+}
+
+ nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+nav a:hover{
+    color: #038C33;
+    transform: translate(-3px, -5px);
+    transition: .2s;
+
+}
+nav ul{
+    list-style: none;
+    
+}
+
+#logo{
+    color:#038C33;
+    font-family: 'logo',Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+}
+#logo:hover{
+    color:#00ff0d;
+    transform: translate(-3px, -5px);
+    transition: .2s;
+}
+main section#home{
+    margin-top: 150px;
+    color: white;
+    text-align: justify;
+
+}
+main section#home h1{
+    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 5px;
+    font-size: 2em;
+}
+main section#home h1#nome{
+    font-family: 'nome',Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 5px;
+    color: #038C33;
+    
+}
+div#redes a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(54, 50, 50);
+    margin: 20px;
+    border-radius: 20px;
+    padding: 12px;    
+
+}
+img#eu{
+    max-width: 450px;
+    display: flex;
+    float: right;
+}

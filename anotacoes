@@ -1,0 +1,35 @@
+<p> HTML5 é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</p>
+
+<p> CSS3 é usado para estilizar elementos escritos em uma linguagem de marcação como HTML</p>
+
+<p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web.</p>
+
+<p>React JS é uma biblioteca JavaScript para a criação de interfaces de usuário — ou UI (user interface).</p>
+
+sobre div#eu{
+    
+    background-image: transparent;
+    color: white;
+    border-radius: 10px;
+    min-width: 400px;
+    max-width: 1000px;
+    min-height: 250px;
+    max-height: 1000px;
+    margin: auto;
+    font-size: 2em;
+    text-align: justify;
+    padding: 10px;
+    
+}
+#contatos div.comunicacao{
+    font-size: 2em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    min-width: 400px;
+    max-width: 1000px;
+    min-height: 250px;
+    max-height: 1000px;
+
+}

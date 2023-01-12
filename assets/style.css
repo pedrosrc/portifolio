@@ -1,5 +1,9 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
 @font-face {
     font-family: "logo";
     src: url('../imagens/fonts/13_Misa.TTF') format('truetype');
@@ -8,113 +12,349 @@
     font-family: "nome";
     src: url(../imagens/fonts/UAV-OSD-Sans-Mono.ttf) format('truetype');
 }
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-}
-body{
-    background-color:#0D0D0D;
-    height: 100vh;
-    width: 100%;
-    /*overflow: overlay;*/
-}
-:root{
+}:root{
     --cor01: #038C33;
     --cor02: #77F296;
     --cor03: #0D0D0D;
     --cor04: #141414;
-
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    background-image: linear-gradient(to bottom, transparent 0%,  #0D0D0D 60%), url("/imagens/green.gif") ;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto;
+    position: relative;
 }
 header{
     padding: 20px 0;
-    margin: 0;
-    border-bottom: 1px solid gray;
+    margin: 0px;
     
 }
 .caixa{   
     margin: 0 auto;
     position: relative;
     display: flex;
+    min-width: 400px;
     max-width:940px;
     
 }
 nav{
     top: 20px;
-    font-size: 15px;
-   /* position: fixed;*/
+    font-size: 20px;
     position: absolute;
     justify-content: space-between;
     right: 0;
     height: 100vh;
+    
 }
  nav a {
     text-transform: uppercase;
     color:white;
     text-decoration: none;
-    padding-inline-start: 10px;
-    font-family: 'Red Hat Display',Arial, Helvetica, sans-serif;
-}
-
- nav li{
+    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+    
+}nav li{
     display: inline-block;
     margin: 0 0 0 15px;
+    margin-right: 10px;
+    
 }
-nav a:hover{
-    color: #038C33;
+nav li:hover{
     transform: translate(-3px, -5px);
     transition: .2s;
-
+    border-bottom: 2px solid  #038C33; 
 }
+
 nav ul{
     list-style: none;
     
 }
-
-#logo{
+.caixa a#logo{
     color:#038C33;
     font-family: 'logo',Arial, Helvetica, sans-serif;
     margin-top: 5px;
     padding: 5px;
     font-size: 2em;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
 }
-#logo:hover{
+a#logo:hover{
     color:#00ff0d;
     transform: translate(-3px, -5px);
     transition: .2s;
 }
-main section#home{
-    margin-top: 150px;
+section#home{
+    display: flex;
     color: white;
-    text-align: justify;
-
+    height: 100vh;
+    position: relative;
+    margin-left: 270px;
+   
+    
 }
-main section#home h1{
+ul#apresentacao{
+    top: 150px;
+    position: absolute;
+    min-width: 400px;
+    max-width: 400px;
+    height: 100vh;
+    float: left;
+    
+}
+section#home #apresentacao h1{
     font-family: 'Oswald',Arial, Helvetica, sans-serif;
     font-weight: 400;
     padding: 5px;
     font-size: 2em;
+    color: white;
+    text-shadow: #000 5px -1px;
+    text-align: justify;
+    
 }
-main section#home h1#nome{
+section#home #apresentacao h1#nome{
     font-family: 'nome',Arial, Helvetica, sans-serif;
     font-weight: 400;
     padding: 5px;
     color: #038C33;
+    text-shadow: #000 20px;
+    
     
 }
 div#redes a{
-    text-decoration: none;
-    color: white;
-    border: 1px solid rgb(54, 50, 50);
     margin: 20px;
-    border-radius: 20px;
-    padding: 12px;    
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+    border-radius: 10px;
+    padding: 13px;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif
+}div#redes a:hover{
+    background-color: rgba(128, 128, 128, 0.116);
 
 }
-img#eu{
-    max-width: 450px;
+div#redes img{
+    max-width: 20px;
+    
+}
+div#redes span{
+    color: white;
+    padding-left: 3px;
+}
+section#sobre {
+    background-color: #0D0D0D;
+    color: #038C33;
+    height: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, transparent 0%, black 60%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#sobre h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'nome',Arial, Helvetica, sans-serif;
+}
+#sobre div#eu{
+    
+    background-image: transparent;
+    color: white;
+    border-radius: 10px;
+    min-width: 400px;
+    max-width: 1000px;
+    min-height: 250px;
+    max-height: 1000px;
+    margin: auto;
+    font-size: 2em;
+    text-align: justify;
+    padding: 10px;
+    
+}
+#sobre div#eu div#foto{
+    float: left;
+    padding: 10px;
+}
+#sobre div#eu div#texto{
+    padding: 10px;
+    text-align: justify;
+}
+section#projetos{
+    margin-top: 200px;
+    height: 100vh;
+    padding: 10px;
+    
+}
+section#projetos div#geral{
+    width: 100%;
+    height: 100vh;
+    
+}
+#projetos h1{
+    color: var(--cor01);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'nome',Arial, Helvetica, sans-serif;
+}
+#projetos .caixas{
+    width: 100%;
+    text-align: center;
+   
+}#projetos .caixas div{
+    width: 300px;
+    background-color: #141414;
+    border-radius: 10px;
+    margin: 10px 20px;
+    display: inline-block;
+    height: 420px;
+    color: rgba(255, 255, 255, 0.658);
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif
+    
+}
+#projetos .caixas div img{
+    width: 300px;
+    border-radius: 10px;
+    height: 250px;
+    background-color:  #141414;
+}
+#projetos .caixas div a{
+    color: #038C33;
+    bottom: 0;
+    text-decoration: none;
+    
+}
+#projetos .caixas div a:hover{
+    color: #00ff0d;
+}
+#projetos .caixas div:hover{
+    transform: translate(-3px, -5px);
+    transition: .3s;
+}
+#projetos h2{
+    color: var(--cor01); 
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 20px;
+}
+#projetos h2#tittle-tech{
+    font-family: 'nome',Arial, Helvetica, sans-serif;
+}
+#projetos div#tecnologias{
+    margin: auto;
+    color: white;
+    max-height: 20px;
+    position: relative;
+    text-align: center;
+    
+}
+div#tecnologias ul{
+    margin-top: 20px;
+    text-align: center;
+}
+div#tecnologias li{
+    margin: 3px 6px;
+    display: inline-block;
+    background-color: #141414;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    width: 100px;
+}
+div#tecnologias li:hover{
+    transform: translate(-3px, -5px);
+    transition: .3s;
+}
+div#tecnologias li p{
+    text-align: start;
+}
+div#tecnologias li img{
+    width: 80px;
+}
+section#contatos{
+    padding: 10px;
+    height: 100%;
+    margin: auto;
+    background-color: #000;
+    
+}   
+#contatos h1{
+    color: var(--cor01);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'nome',Arial, Helvetica, sans-serif;
+}
+#contatos div.comunicacao{
+    font-size: 2em;
+    padding: 10px;
     display: flex;
-    float: right;
+    align-items: center;
+    margin: auto;
+    min-width: 400px;
+    max-width: 900px;
+    min-height: 250px;
+    max-height: 2000px;
+}
+.comunicacao div#lista{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+}
+div#lista p{
+    color: #038C33;
+    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+}
+div#lista li{
+    list-style: none;
+    text-align: left;
+}svg{
+    color: #038C33;
+    max-width: 25px;
+}   
+.comunicacao div#cartoon{
+    padding: 10px;
+    display: inline-block;
+}
+div#cartoon img{
+    width: 400px;
+
+}
+@media screen and (max-width: 600px){
+    section#home{
+        margin-left: 20px;
+    }
+    section#projetos{
+        margin-bottom: 1000px;
+    }
+    #contatos div.comunicacao{
+        display: inline-block;
+        
+        
+    }
+    .comunicacao div#lista{
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .comunicacao div#cartoon{
+        padding: 10px;
+        display: flex;
+        float: left;
+    }
 }

@@ -30,7 +30,7 @@ body{
     background-repeat: no-repeat;
     background-position: left top;
     background-size: auto;
-    position: relative;
+    position: relative;    
 }
 header{
     padding: 20px 0;
@@ -181,10 +181,35 @@ section#sobre {
 #sobre div#eu div#foto{
     float: left;
     padding: 10px;
+    
+}div#foto img{
+    border-radius: 5px;
+    max-width: 400px;
 }
-#sobre div#eu div#texto{
-    padding: 10px;
+#sobre div#eu div#texto p{
+    padding: 14px;
     text-align: justify;
+}div#eu li{
+    list-style: none;
+    margin-left: 10px;
+    
+}
+div#eu li a{
+    text-decoration: none;
+    border: 1px solid#038C33;
+    border-radius: 8px;
+    color: white;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif
+    
+}div#eu li a:hover{
+    background-color: rgba(128, 128, 128, 0.082);
+}
+div#eu li svg{
+    width: 27px;
 }
 section#projetos{
     margin-top: 200px;
@@ -280,13 +305,14 @@ div#tecnologias li img{
     width: 80px;
 }
 section#contatos{
-    padding: 10px;
-    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 0;
+    min-height: 50px;
+    max-height: 2000px;
     margin: auto;
-    background-color: #000;
+    background-color: #000; 
     
-}   
-#contatos h1{
+}#contatos h1{
     color: var(--cor01);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -296,16 +322,12 @@ section#contatos{
 }
 #contatos div.comunicacao{
     font-size: 2em;
-    padding: 10px;
     display: flex;
     align-items: center;
     margin: auto;
     min-width: 400px;
     max-width: 900px;
-    min-height: 250px;
-    max-height: 2000px;
-}
-.comunicacao div#lista{
+}.comunicacao div#lista{
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -325,12 +347,26 @@ div#lista li{
     max-width: 25px;
 }   
 .comunicacao div#cartoon{
-    padding: 10px;
+    padding-bottom: 0px;
     display: inline-block;
+    margin: 0;
 }
 div#cartoon img{
     width: 400px;
-
+    padding: 0;
+    margin: 0;
+}
+footer{
+    text-align: center;
+    background-color: #038C33 ;
+    font-size: 12px;
+    padding: 9px;
+    bottom: 0;
+    color:#000000;
+    font-family: 'nome',Arial, Helvetica, sans-serif;
+}footer a{
+    text-decoration: none;
+    color: #000;
 }
 @media screen and (max-width: 600px){
     section#home{

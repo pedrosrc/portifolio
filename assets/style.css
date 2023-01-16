@@ -26,7 +26,7 @@ body{
     height: 100vh;
     width: 100%;
     background-color: #000;
-    background-image: linear-gradient(to bottom, transparent 0%,  #0D0D0D 60%), url("/imagens/green.gif") ;
+    background-image: linear-gradient(to bottom, transparent 0%,  #0D0D0D 60%), url("../imagens/green.gif") ;
     background-repeat: no-repeat;
     background-position: left top;
     background-size: auto;

@@ -205,11 +205,13 @@ section#sobre {
     margin-left: 10px;
     
 }
-div#eu li a{
+div#eu li#download a{
     text-decoration: none;
     border: 1px solid#038C33;
     border-radius: 8px;
     color: white;
+    display: flex;
+    width: 115px;
     padding: 5px;
     align-items: center;
     text-align: center;
@@ -219,8 +221,8 @@ div#eu li a{
 }div#eu li a:hover{
     background-color: rgba(128, 128, 128, 0.082);
 }
-div#eu li svg{
-    width: 27px;
+div#eu li#download img{
+    width: 24px;
 }
 section#projetos{
     margin-top: 200px;
@@ -352,11 +354,21 @@ div#lista p{
 }
 div#lista li{
     list-style: none;
+    padding: 10px;
     text-align: left;
+    display: flex;
+    align-items: center;
+    
 }svg{
-    color: #038C33;
-    max-width: 25px;
-}   
+    max-width: 24px;
+    
+}div#lista li:hover{
+    border-radius: 10px;
+    
+    background-color: #0D0D0D;
+    
+    transition: .2s;
+}  
 .comunicacao div#cartoon{
     padding-bottom: 0px;
     display: inline-block;
@@ -390,13 +402,78 @@ footer{
     background: #038C33;
     border-radius: 5px;
 }
-
-@media screen and (max-width: 600px){
-    section#home{
+@media screen and (max-width: 1400px){
+    section#projetos{
+        margin-bottom: 500px;
+    }
+}@media screen and (max-width: 1000px){
+    section#projetos{
+        margin-bottom: 500px;
+    }
+}@media screen and (max-width: 800px){
+    section#projetos{
+        margin-bottom: 1400px;
+    }.comunicacao div#lista{
+         color: white;
+         margin: auto;
+         padding: 10px;
+         text-decoration: none;
+         text-align: center;
+         display: flex;
+         align-items: center;
+         font-size: 22px;
+         margin-left: 60px;
+     }
+     .comunicacao div#cartoon{
+         padding: 10px;
+         display: flex;
+         float: left;
+         margin-left: 60px;
+     }div#cartoon img{
+         width: 300px;
+     }
+}@media screen and (max-width: 600px){
+    html{
+        width: 100vw;
+        text-align: center;
+    }
+    .container{
+        text-align: center;
+        margin: auto;
+    }body{
+        width: 100vw;
+    }.caixa a#logo{
+        margin-left: 12px;
+        padding-left: 22px;
+    }
+    section#sobre{
+        width: 100vw;
+        margin: auto;
+        
+    }
+    #sobre div#eu div#texto p{
+        text-align: justify;
+        font-size: 18px;
+        max-width: 300px;
+        margin: auto;   
+    }div#foto img{
+        margin: auto;
+        width: 300px;
+        margin-left: 70px;
+    }li#download a{
+        margin: auto;
+    }#projetos div#tecnologias{
+        width: 100vw;
+    }
+     section#home{
         margin-left: 20px;
+        width: 100vw; 
     }
     section#projetos{
-        margin-bottom: 1000px;
+        width: 100vw;
+        margin-bottom: 1500px;
+    }section#contatos{
+        width: 100vw;
     }
     #contatos div.comunicacao{
         display: inline-block;
@@ -405,16 +482,25 @@ footer{
     }
     .comunicacao div#lista{
         color: white;
+        margin: auto;
         padding: 10px;
         text-decoration: none;
         text-align: center;
         display: flex;
         align-items: center;
+        font-size: 22px;
+        margin-left: 60px;
     }
     .comunicacao div#cartoon{
         padding: 10px;
         display: flex;
         float: left;
+        margin-left: 60px;
+    }div#cartoon img{
+        width: 300px;
+    }
+    footer{
+        width: 100vw;
     }
 }
 @keyframes blink{

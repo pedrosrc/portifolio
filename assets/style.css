@@ -126,6 +126,11 @@ section#home #apresentacao h1#nome{
     text-shadow: #000 20px;
     
     
+}#apresentacao h1#nome::after{
+    content: '|';
+    text-shadow: #000 20px;
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
 }
 div#redes a{
     margin: 20px;
@@ -146,6 +151,12 @@ div#redes img{
 div#redes span{
     color: white;
     padding-left: 3px;
+}
+.container{
+    opacity: 0;
+    transition: opacity 1s linear;
+}.container-off{
+    opacity: 1;
 }
 section#sobre {
     background-color: #0D0D0D;
@@ -368,6 +379,18 @@ footer{
     text-decoration: none;
     color: #000;
 }
+::-webkit-scrollbar-track{
+    background-color:rgba(65, 65, 65, 0.753);
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #038C33;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 600px){
     section#home{
         margin-left: 20px;
@@ -392,5 +415,13 @@ footer{
         padding: 10px;
         display: flex;
         float: left;
+    }
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }

@@ -337,7 +337,7 @@ div#section-contatos div#lista-contatos {
     list-style: none;
     display: inline-flex;
     padding: 8px;
-    font-size: 22px;
+    font-size: 28px;
     align-items: center;
 }#lista-contatos li:hover{
     background-color: rgba(95, 92, 92, 0.24);
@@ -366,23 +366,49 @@ div#section-contatos div#lista-contatos {
 ::-webkit-scrollbar-thumb{
     background: #038C33;
     border-radius: 5px;
-}
-@media screen and (max-width: 1400px){
+}@media screen and (max-width: 1300px){
     section#projetos{
         margin-bottom: 500px;
     }
-}@media screen and (max-width: 1000px){
+}@media screen and (max-width: 1200px){
     section#projetos{
-        margin-bottom: 500px;
+        margin-bottom: 620px;
+    }
+}
+@media screen and (max-width: 1000px){
+    section#sobre{
+        width: 100%;
+    }section#sobre div#eu{
+       margin: auto;
+       text-align: center;
+       justify-content: center;
+    }
+    section#sobre div#foto{
+        margin: auto;
+        padding: 0;
+        margin-left: 20%;
+        justify-content: center;
+        display: inline-block;
+    }
+    section#sobre div#texto{
+        width: 600px;
+        padding: 0;
+        display: inline-block;
+    }div#eu li{
+        text-align: center;
+        margin: auto;
+        margin-left: 12%;
+    }section#projetos{
+        margin-bottom: 100px;
     }
 }@media screen and (max-width: 800px){
     section#projetos{
-        margin-bottom: 1400px;
+        margin-bottom: 300px;
     }
 }
 @media screen and (max-width: 730px){
     body,html{
-        max-width: 100vw;
+        max-width: 100%;
         padding-left: 0;
         margin-left: 0;
     }
@@ -419,7 +445,9 @@ div#section-contatos div#lista-contatos {
         margin-left: 20px;
     }
     section{
-        padding-right: 0px;
+        padding: 0;
+        height: 100%;
+        margin-bottom: 0;
     } 
     #sobre div#eu div#texto p{
         font-size: 18px;
@@ -432,8 +460,8 @@ div#section-contatos div#lista-contatos {
         width: 14px;
     }
      section#projetos{
-        width: 100vw;
-        margin-bottom: 1500px;
+        width: 100%;
+        margin-bottom: 0;
     }section#contatos{
         width: 100%;
         height: 100%;
@@ -444,7 +472,7 @@ div#section-contatos div#lista-contatos {
         width: 100%;
 
     }#lista-contatos ul{
-        display: inline-block;
+        display:inline-block;
         text-align: center;
     }div#section-contatos div#cartoon{
         padding-left: 0px;
@@ -529,12 +557,20 @@ div#section-contatos div#lista-contatos {
         margin: 0;
         margin-left: 12px;
     }
-    #sobre div#eu div#texto p{
+    #sobre div#eu div#texto{
         padding: 0;
+        width: 360px;
     }
     #sobre div#eu div#foto{
-        padding: 10px;
-    }#projetos .caixas div{
+        margin-left: 0px;
+        padding-left: 10px;
+        max-width: 350px;
+    }div#eu li{
+        text-align: center;
+        margin: auto;
+        margin-left: 3%;
+    }
+    #projetos .caixas div{
         width: 300px;
         background-color: #141414;
         border-radius: 10px;
@@ -548,12 +584,16 @@ div#section-contatos div#lista-contatos {
     }
     section#projetos{
         padding: 0;
+        margin-bottom: 1300px;
     }
     div#tecnologias li{
         padding: 8px;
         margin: 1px;
     }
 }@media screen and (max-width: 390px){
+    section{
+        width: 100%;
+    }
     ul#apresentacao{
         margin: 0;
         padding: 0;
@@ -564,23 +604,31 @@ div#section-contatos div#lista-contatos {
     }
     #sobre div#eu div#foto{
         padding: 0px;
+        
+    }section#projetos{
+        margin-bottom: 1500px;
+    }
+    footer{
+        width: 100%;
     }
 }@media screen and (max-width: 360px){
     ul#apresentacao{
         margin: 0;
         padding: 0;
+        max-width: 280px;
     }#sobre{
         margin: 0;
         padding: 0;
     }
     #sobre div#eu div#texto p{
         padding: 0;
-        max-width: 320px;
+        max-width: 280px;
     }
     #sobre div#eu div#foto{
         padding: 0px;
     }div#foto img{
-        width: 320px;
+        padding: 0;
+        width: 280px;
     }#projetos .caixas div{
         width: 300px;
         border-radius: 10px;

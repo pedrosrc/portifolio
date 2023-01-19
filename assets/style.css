@@ -380,8 +380,10 @@ div#section-contatos div#lista-contatos {
         width: 100%;
     }section#sobre div#eu{
        margin: auto;
+       padding: 0;
+       margin: 0;
        text-align: center;
-       justify-content: center;
+       
     }
     section#sobre div#foto{
         margin: auto;
@@ -391,13 +393,15 @@ div#section-contatos div#lista-contatos {
         display: inline-block;
     }
     section#sobre div#texto{
-        width: 600px;
+        width: 400px;
         padding: 0;
         display: inline-block;
     }div#eu li{
         text-align: center;
         margin: auto;
-        margin-left: 12%;
+        width: 50px;
+        margin-top: 5px;
+        margin-left: 5%;
     }section#projetos{
         margin-bottom: 100px;
     }
@@ -448,10 +452,22 @@ div#section-contatos div#lista-contatos {
         padding: 0;
         height: 100%;
         margin-bottom: 0;
-    } 
+    } #sobre{
+        width: 450px;
+        margin: 0;
+
+    }
     #sobre div#eu div#texto p{
         font-size: 18px;
-    }div#foto img{
+        padding: 0;
+        
+        max-width: 450px;
+    }#sobre div#eu div#foto{
+        margin-left: 0px;
+        padding-left: 50px;
+        max-width: 350px;
+    }
+    div#foto img{
         width: 350px;
     }div#eu li#download a{
         width: 100px;
@@ -461,7 +477,7 @@ div#section-contatos div#lista-contatos {
     }
      section#projetos{
         width: 100%;
-        margin-bottom: 0;
+        margin-bottom: 1500px;
     }section#contatos{
         width: 100%;
         height: 100%;
@@ -584,7 +600,7 @@ div#section-contatos div#lista-contatos {
     }
     section#projetos{
         padding: 0;
-        margin-bottom: 1300px;
+        margin-bottom: 1400px;
     }
     div#tecnologias li{
         padding: 8px;

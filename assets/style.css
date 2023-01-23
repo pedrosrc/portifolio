@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
 @font-face {
     font-family: "logo";
     src: url('../imagens/fonts/13_Misa.TTF') format('truetype');
@@ -161,12 +163,11 @@ section#sobre {
     font-family: 'nome',Arial, Helvetica, sans-serif;
 }
 #sobre div#eu{
-    
-    background-image: transparent;
-    color: white;
-    border-radius: 10px;
     min-width: 400px;
     max-width: 1000px;
+    background-image: transparent;
+    color: white;
+    width: 100%;
     min-height: 250px;
     max-height: 1000px;
     margin: auto;
@@ -185,10 +186,13 @@ section#sobre {
     
 }#sobre div#eu div#texto{
     margin-top: 30px;
+    width: 500px;
+    display: inline-block;
 }
 #sobre div#eu div#texto p{
     padding: 5px;
-    font-size: 28px;
+    font-family: 'Signika', Arial, Helvetica, sans-serif;
+    font-size: 26px;
     text-align: justify;
 }div#eu li{
     list-style: none;
@@ -198,19 +202,19 @@ section#sobre {
     border: 1px solid#038C33;
     border-radius: 8px;
     color: white;
-    display: flex;
-    width: 130px;
+    display: inline-flex;
+    width: 115px;
     padding: 5px;
     align-items: center;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Fira Sans', Arial, Helvetica, sans-serif
     
 }div#eu li a:hover{
     background-color: rgba(128, 128, 128, 0.082);
 }
 div#eu li#download img{
-    width: 24px;
+    width: 20px;
 }
 section#projetos{
     margin-top: 200px;
@@ -383,6 +387,7 @@ div#section-contatos div#lista-contatos {
        padding: 0;
        margin: 0;
        text-align: center;
+       width: 100%;
        
     }
     section#sobre div#foto{
@@ -403,11 +408,13 @@ div#section-contatos div#lista-contatos {
         margin-top: 5px;
         margin-left: 5%;
     }section#projetos{
-        margin-bottom: 100px;
+        margin-bottom: 600px;
     }
 }@media screen and (max-width: 800px){
     section#projetos{
-        margin-bottom: 300px;
+        margin-bottom: 600px;
+    }div#eu li#download a{
+        margin-left: 13px;
     }
 }
 @media screen and (max-width: 730px){
@@ -606,6 +613,16 @@ div#section-contatos div#lista-contatos {
         padding: 8px;
         margin: 1px;
     }
+
+}
+@media screen and (max-width:400px){
+    
+    section{
+        width: 100%;
+    }
+    #sobre div#eu div#foto{
+        margin-left: 16px;
+    }
 }@media screen and (max-width: 390px){
     section{
         width: 100%;
@@ -642,8 +659,10 @@ div#section-contatos div#lista-contatos {
     }
     #sobre div#eu div#foto{
         padding: 0px;
+        
     }div#foto img{
         padding: 0;
+       
         width: 280px;
     }#projetos .caixas div{
         width: 300px;

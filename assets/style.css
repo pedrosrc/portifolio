@@ -51,6 +51,7 @@ header{
     color:#038C33;
     font-family: 'logo',Arial, Helvetica, sans-serif;
     font-size: 2rem;
+    cursor: pointer;
 }.logo h1:hover{
     color: #00ff0d;
 }.nav-list{
@@ -60,10 +61,11 @@ header{
     display: flex;
     justify-content: center;
     list-style: none;
+    
       
 }.nav-list li:hover{
-    transform: translate(-3px, -5px);
     transition: .2s;
+    transform: translate(-3px, -5px);
     border-bottom: 1.3px solid #038C33;
 }.nav-item{
     margin: 0 15px;
@@ -217,7 +219,8 @@ div#eu li#download img{
     width: 20px;
 }
 section#projetos{
-    margin-top: 200px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     height: 100vh;
     padding: 10px;
     
@@ -507,8 +510,8 @@ div#section-contatos div#lista-contatos {
     }footer{
         width: 100%;
     }
-}/*
-@media screen and (max-width: 600px){
+}
+@media screen and (max-width: 660px){
     html{
         width: 100vw;
         text-align: center;
@@ -574,7 +577,7 @@ div#section-contatos div#lista-contatos {
     footer{
         width: 100vw;
     }
-}*/
+}
 @media screen and (max-width: 430px){
     ul#apresentacao{
         margin: 0;
@@ -617,11 +620,22 @@ div#section-contatos div#lista-contatos {
 }
 @media screen and (max-width:400px){
     
-    section{
-        width: 100%;
-    }
+    
     #sobre div#eu div#foto{
-        margin-left: 16px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }div#texto{
+        width: 350px;
+        margin-left: 0px;
+        padding-left: 0;
+    }
+    div#texto p{
+        margin-left: 1px;
+        margin: auto;
+    }
+    div#foto img{
+        margin-left: 45px;
+        justify-content: center;
     }
 }@media screen and (max-width: 390px){
     section{
@@ -676,6 +690,9 @@ div#section-contatos div#lista-contatos {
         
     }
 }
+
+
+
 @keyframes blink{
     0%{
         opacity: 1;

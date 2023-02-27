@@ -4,148 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Leonardo - Portfólio</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./imagens/icons/favicon.ico" type="image/x-icon">
+    <title>Pedro Leonardo - Portfolio</title>
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1>pL</h1>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Mim</a></li>
-                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#contatos" class="nav-link">Contatos</a></li>
-                </ul>
-            </div>
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="./imagens/icons/menu_white_36dp.svg" alt="icone de menu"></button>
+        <nav>
+           <a class="logo" href="#">pL</a>
+           
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#history">Sobre Mim</a></li>
+                <li class="nav-item"><a href="#jobs">Projetos</a></li>
+                <li class="nav-item"><a href="#contacts">Contatos</a></li>
+            </ul>
+            <div class="menu-mobile-icon">
+                <button onclick="menuShow()"><img class="icon" src="./imagens/icons/menu_white_36dp.svg" alt=""></button>  
             </div>
         </nav>
-        <div class="mobile-menu">
+        <div class="menu-mobile">
             <ul>
-                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Mim</a></li>
-                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
-                <li class="nav-item"><a href="#contatos" class="nav-link">Contatos</a></li>
+                <li class="nav-item">Sobre Mim</li>
+                <li class="nav-item">Projetos</li>
+                <li class="nav-item">Contatos</li>
             </ul>
-
-            <div class="mobile-menu">
-                <button><img class="icon" src="./imagens/icons/menu_white_36dp.svg" alt="icone de menu"></button>
-            </div>
+            
         </div>
     </header>
     <main>
-        <section id="home">
-            <ul id="apresentacao">
-                <h1>Olá, eu sou</h1> 
-                <div><h1 id="nome">⇜Pedro Leonardo⇝</h1></div> 
-                <h1> Desenvolvedor Front-End</h1>       
-            <br>
-            <div id="redes">
+        <section class="container" >
+            <div class="home">
+                <div class="presentetion"> 
+                    <h1>Olá, eu sou</h1>
+                    <h1 onLoad="typeWriter()" id="nome">⇜Pedro Leonardo⇝</h1>
+                    <h1>Desenvolvedor Front-End</h1>
+                    <ul>
+                        <li style="border-color: #004594;"><a href="https://www.linkedin.com/in/pedroleodev" target="_blank"> <img src="./imagens/icons/linkedin-1.png" alt=""> LinkedIn</a></li>
+                        <li style="border-color: #2b0261;""><a href="https://github.com/pedrosrc" target="_blank"> <img src="./imagens/icons/github-1.png" alt=""> GitHub</a></li>
+                    </ul>
+                
+                </div>
+                <div class="image_presentetion"><img src="./imagens/notebook.gif" alt="notebook"></div>
+            </div>
+        </section>
+        <section class="container" id="history">
+            <h1 class="tittle" id="about"> Sobre Mim</h1>
+            <div class="sobre">
+                <div class="image-pedro"> <img src="./imagens/pedro-3.jpg" alt="garoto negro de cabelo grande"> </div>
+                <div class="text-pedro">
+                    <p>Olá, me chamo Pedro Leonardo, curso Análise e Desenvolvimento de Sistemas pela Estácio e sou desenvolvedor web com foco atual de estudos em Front-end, mas com desejo de ser Full-Stack. Atualmente, faço cursos e leituras para sempre me manter em evolução e atualizado das novidades na área da programação, desenvolvo projetos para meu portfólio. No momento estudo principalmente ReactJs e busco oportunidades na área de desenvolvimento web.</p>
+                    <a class="download" href="./imagens/arquivos/cv-pedro.pdf" alt="download" download="cv-pedro.pdf" > CV <img src="./imagens/icons/download.svg" alt="icon download"> </a>
+                </div>
+            </div>
+        </section>
+        <section class="container" style="margin-top: 60px;" id="jobs" >
+            <h1 class="tittle" style="padding: 30px;">Projetos</h1>
+            <div class="projects">
+                <div class="blocks">
+                    <img src="./imagens/projetos/site-android.gif" alt="pagina">
+                    <h2>Landing Page de Blog</h2>
+                    <p>Desafio proposto no Curso em Vídeo, usando apenas HTML-CSS</p>
+                    <p>HTML-CSS</p>
+                    <a href="https://pedrosrc.github.io/projeto-android/" target="_blank"> ➪Acesse Aqui</a>
+                </div>
+                
+                <div class="blocks">
+                    <img src="./imagens/projetos/projeto-login.gif" alt="pagina">
+                    <h2>Página de Login</h2>
+                    <p>Página de login e cadastro feito em JavaScript</p>
+                    <p>HTML-CSS-JavaScript</p>
+                    <a href="https://pedrosrc.github.io/Tela-de-Login/" target="_blank"> ➪Acesse Aqui</a>
+                </div>
+                <div class="blocks">
+                    <img src="./imagens/projetos/projetos.jpg" alt="pagina">
+                    <h2>Projetos em JavaScript</h2>
+                    <p>Projeitos em JavaScript, sendo um consumindo API</p>
+                    <p>HTML-CSS-JavaScript</p>
+                    <a href="https://github.com/pedrosrc/Treinos-em-JavaScript" target="_blank">➪Acesse Aqui</a>
+                </div> 
+                <div class="blocks none">
+                    <img src="./imagens/projetos/load.gif" alt="pagina de relogio">
+                    <h2>Em Desenvolvimento</h2>
+                    <p>Projeto sendo feito em ReactJs</p>
+                    <p>Aprendizado sempre em evolução</p>
+                    <a href="#" target="_blank"> ...</a>
+                </div>
+                
+            </div>
+            <button onClick="showProject()" id="show-or-hidden">Mostrar Mais⇕</button>
+            <div class="tecnologies">
+                <h2>Tecnologias</h2>
                 <ul>
-                    <a href="https://www.linkedin.com/in/pedroleodev" target="_blank" style="border-color: #41A8EA;">
-                        <img src="./imagens/icons/linkedin-1.png" alt="logo do linkedin">
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/pedrosrc" target="_blank" style="border-color: #88259F;">
-                        <img src="./imagens/icons/github-1.png" alt="llogo do github">
-                        <span>GitHub</span>
-                       
-                    </a>
+                    <li> <img src="./imagens/icons/html.png" alt="icon-html"> HTML5</li>
+                    <li> <img src="./imagens/icons/css.png" alt="icon-css"> CSS3</li>
+                    <li> <img src="./imagens/icons/javascript.png" alt="icon-javascript"> JavaScript </li>
+                    <li> <img src="./imagens/icons/react.png" alt="icon-react">React Js</li>
                 </ul>
-            </div>
-           
-        </section>
-        <section class="container" id="sobre">
-            <h1>Sobre Mim</h1>
-            <div id="eu">
-                <div id="foto">
-                    <img src="./imagens/pedro-3.jpg" alt="pedro leonardo com camisa preta em um fundo verde"></div>
-                <div id="texto">
-                    <p style="text-align: justify;">Olá, me chamo Pedro Leonardo, cursando Análise e Desenvolvimento de Sistemas pela Estácio e desenvolvedor web com foco atual de estudos em Front-end. Atualmente, faço cursos e leituras para sempre me manter em evolução e atualizado das novidades na área da programação, desenvolvo projetos para meu portfólio com foco em Front-end, no momento estudando principalmente ReactJs e busco oportunidades na área de desenvolvimento web.</p>
-                </div>
-                <li id="download"><a href="./imagens/arquivos/cv-pedro.pdf" download="curriculo-pedro.pdf"> <img src="./imagens/icons/download.svg" alt="ícone de download"> Currículo</a></li>
+                
             </div>
         </section>
-        <section class="container" id="projetos">
-            <h1>Projetos</h1>
-            <div id="geral">
-                <div class="caixas">
-                    <div>
-                        <img src="./imagens/projetos/site-android.gif" alt="site com relogios em formato digital e tradicional">
-                        <h2>Página de Tecnologia</h2>
-                        <p>Desafio proposto pelo <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a>, sobre o sistema Android. </p> <br>
-                        <p>HTML - CSS</p> <br>
-                        <a href="https://pedrosrc.github.io/projeto-android/" target="_blank">➪ Acesse Meu Projeto</a>
-                    </div>
-                    <div>
-                        <img src="./imagens/projetos/projeto-horas.gif" alt="site com relogios em formato digital e tradicional">
-                        <h2>Relógio Digital/Tradicional</h2>
-                        <p>Página de horário com dois formatos: digital e tradicional. </p> <br>
-                        <p>HTML - CSS - JS</p> <br>
-                        <a href="https://pedrosrc.github.io/projeto-relogio/" target="_blank">➪ Acesse Meu Projeto</a>
-                    </div>
-                    <div>
-                        <img src="./imagens/projetos/projeto-login.gif" alt="site com tela de login e cadastro">
-                        <h2>Tela de Login e Cadastro</h2>
-                        <p>Projeto de tela de login e cadastro para acesso em plataformas.</p> <br>
-                        <p>HTML - CSS - JS</p> <br>
-                        <a href="https://pedrosrc.github.io/Tela-de-Login/" target="_blank">➪ Acesse Meu Projeto</a>
-                    </div>
-                    <div>
-                        <img src="./imagens/projetos/load.gif" alt="test">
-                        <h2>Em Breve</h2>
-                        <p>Projeto sendo construído em ReactJS. Aprendizado em constate evolução</p> <br>
-                        <p>HTML - CSS - JS - ReactJS</p> <br>
-                        <a href="#">...</a>
-                    </div>
-                </div>
-                <h2 id="tittle-tech">
-                    Tecnologias
-                </h2>
-                <div id="tecnologias">
+        <section class="container" id="contacts" >
+            <h1 class="tittle" id="tittle-contatos">Contatos</h1>
+            <div class="contatos">
+                <div class="text-contatos">
+                    <h2>Fale Comigo!</h2>
                     <ul>
-                        <li>
-                            <img src="./imagens/icons/html.png" alt="icone-html-5">
-                            <span>HTML5</span>
-                        </li>
-                        <li>
-                            <img src="./imagens/icons/css.png" alt="icone do css 3">
-                            <span>CSS3</span>
-                        </li>
-                        <li>
-                            <img src="./imagens/icons/javascript.png" alt="icone do javascript">
-                            <span>JavaScript</span>
-                        </li>
-                        <li>
-                            <img src="./imagens/icons/react.png" alt="icone reactjs">
-                            <span>ReactJs</span>
-                        </li>
+                        <li> <img src="./imagens/icons/envelope-regular-24.png" alt="email-logo"> pedroleon.pc@outlook.com </li>
+                        <li> <img src="./imagens/icons/whatsapp-logo-24.png" alt=""> +55 (85) 99924-4215 </li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        <section class="container" id="contatos">
-            <h1>Contatos</h1>
-            <div id="section-contatos">
-                <div id="lista-contatos">
-                    <ul>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(3, 140, 51, 1);"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg> pedroleon.pc@outlook.com</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(3, 140, 51, 1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path></svg> +55 (85) 99924-4215</li>
-                    </ul>
-                </div>
-                <div id="cartoon">
-                    <img src="./imagens/pedro-cartoon.png" alt="cartoon de um garoto negro de camisa listrada e casaco preto">
+                <div class="cartoon">
+                    <img src="./imagens/pedro-cartoon.png" alt="cartoon pedro">
                 </div>
             </div>
         </section>
     </main>
-    <footer><p>Created by <a href="https://github.com/pedrosrc" target="_blank">Pedro Leonardo</a></p></footer>
+    <footer>Created by <a href="https://github.com/pedrosrc" target="">Pedro Leonardo</a></footer>
+    <script src="./assets/scripts/nav.js"></script>
     <script src="./assets/scripts/name.js"></script>
     <script src="./assets/scripts/bloco.js"></script>
-    <script src="./assets/scripts/nav.js"></script>
+    <script src="./assets/scripts/showProject.js"></script>
 </body>
 </html>

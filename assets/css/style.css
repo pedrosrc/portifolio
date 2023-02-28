@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crete+Round&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crete+Round&family=Fira+Sans:wght@300&family=Teko:wght@500&display=swap');
 
 @font-face {
@@ -41,7 +42,7 @@ nav {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 5rem;
 
 }
 
@@ -61,9 +62,10 @@ a {
 .logo {
     font-size: 2em;
     letter-spacing: 4px;
-    font-family: 'sigla', Arial, Helvetica, sans-serif;
+    font-family: 'Monofett', Arial, Helvetica, sans-serif;
     color: var(--cor03);
 }
+
 
 .logo:hover {
     color: #00ff15;
@@ -230,7 +232,7 @@ h1#about{
     padding: 10px; 
 }
 
-.projects .blocks{
+.blocks{
     width: 300px;
     height: 400px;
     padding-bottom: 6px;
@@ -241,28 +243,28 @@ h1#about{
     font-family: 'Fira Sans', Helvetica, sans-serif;
     
 }
-.projects .blocks:hover{
+.blocks:hover{
     transform: translate(-3px, -5px);
     transition: .3s;
 }
-.projects .blocks img{
-    width: 350px;
+.blocks img{
+    width: 300px;
     height: 250px;
     
     
 }
-.projects .blocks h2{
+.blocks h2{
     background-color: black;
     color: var(--cor03);
     text-align: center;
     padding: 10px;
 }
-.projects .blocks p{
+.blocks p{
     color: white;
     background-color: #000;
     padding: 5px;
 }
-.projects .blocks a{
+.blocks a{
     background-color: #000;
     text-decoration: none;
     color: #038C33;
@@ -274,8 +276,17 @@ h1#about{
 }
 .none{
     display: none;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
-button{
+.buttom{
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.buttom button{
     text-align: center;
     background-color: #000;
     color: white;
@@ -284,11 +295,12 @@ button{
     padding: 10px;
     width: 170px;
     cursor: pointer;
-    margin-left: 45%;
+    
 }
 .tecnologies{
     width: 100%;
     margin-top: 20px;
+    
 
 }
 .tecnologies h2{
@@ -346,7 +358,7 @@ text-contatos{
     color: var(--cor03);
     font-family: 'name',Arial, Helvetica, sans-serif;
     font-size: 26px;
-    text-align: justify;
+    text-align: center;
     background-color: black;
 
 }
@@ -429,12 +441,14 @@ footer{
 
     .menu-mobile-icon {
         display: block;
+        
     }
 
     .menu-mobile-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
+        
     }
 
     .menu-mobile ul {
@@ -502,19 +516,32 @@ footer{
        
     }
     button{
-        margin-left: 30%;
+        margin-bottom: 20px;
     }
 }
 @media screen  and (max-width: 500px) {
     .sobre .text-pedro{
-        width: 300px;
+        width: 350px;
     }
     .text-pedro p{
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .tecnologies{
+        
+        width: 340px;
+        margin: auto;
+        justify-content: center;
     }
     .tecnologies ul{
-        display: inline-block;
-        position: relative;
+        display: block;
+        
+    }
+    .tecnologies ul li{
+        
+        margin: auto;
+    }
+    .none{
+        flex-direction: column;
     }
     
 }

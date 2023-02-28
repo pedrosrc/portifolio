@@ -1,14 +1,13 @@
 function showProject(){
     const div = document.querySelector('.none')
-    const button = document.querySelector('#show-or-hidden')
-    
-    button.addEventListener('click', function(){
+    const button =document.querySelector('#show-or-hidden')
 
-        if(div.style.display === 'block'){
+    if(div.style.display === 'flex'){
             div.style.display = 'none'
-        }else{
-            div.style.display = 'block'
+            button.innerHTML = ('Mostrar Mais ⇩')
+    }else{
+            div.style.display = 'flex'
+            button.innerHTML =('Mostrar Menos ⇧')
         }
 
-    })
-}
+    }
